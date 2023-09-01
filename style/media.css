@@ -1,0 +1,265 @@
+@media(max-width:1100px){
+    .top__info,
+    .clothes__box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 30px;
+        max-width: 540px;
+        width: 100%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .top__info::-webkit-scrollbar{
+        height: 5px;
+    }
+    .top__info::-webkit-scrollbar-thumb{
+        background-color: teal;
+        border-radius: 5px;
+    }
+    .clothes__desc{
+        margin-top: 20px;
+    }
+    .footer__box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 30px;
+        max-width: 540px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer__title{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer__list{
+        align-items: center;
+    }
+    .footer{
+        margin-top: 30px;
+        padding: 20px 0;
+    }
+}
+@media(max-width:1000px){
+    .nav__input{
+       display: none;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav__list{
+        position: absolute;
+        flex-direction: column;
+        background-color: #fff;
+        left: -200px;
+        top: 0;
+        padding: 50px;
+        align-items: center;
+        gap: 30px;
+        height: 100%;
+        z-index: 99;
+        transition: 0.5s;
+    }
+    #inp:checked ~ .nav__list{
+        left: 0;
+    }
+    .label{
+        order: -1;
+    }
+    .main__center{
+        height: 350px;
+    }
+    .main__center-title,
+    .main__center-text{
+        text-align: center;
+    }
+    .main__center-link{
+        margin: 0 auto;
+        width: 140px;
+        height: 40px;
+    }
+    .intro{
+        height: 500px;
+    }
+    .intro__title{
+        font-size: 40px;
+        line-height: 100%;
+        padding: 12px 40px;
+    }
+    .intro__text{
+        margin: 30px 0;
+    }
+    .intro__link{
+        width: 120px;
+        height: 40px;
+    }
+    .title{
+        font-size: 40px;
+        line-height: 100%;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .text{
+        margin-bottom: 30px;
+    }
+    .main__center-title{
+        font-size: 40px;
+        margin: 10px 0;
+        line-height: 100%;
+    }
+}
+@media(max-width:800px){
+    .intro{
+        height: 400px;
+    }
+    .intro__title{
+        font-size: 30px;
+        line-height: 100%;
+        padding: 10px 36px;
+    }
+    .intro__text{
+        margin: 15px 0;
+    }
+    .intro__link{
+        width: 100px;
+        height: 30px;
+    }
+    .title{
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    .text{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .main__center-text{
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .main__center-link{
+        width: 130px;
+        height: 35px;
+    }
+    .main__center-title{
+        font-size: 30px;
+    }
+    .main__center{
+        height: 300px;
+    }
+    .clothes__card{
+        height: 300px;
+    }
+    .clothes__title{
+        font-size: 18px;
+        line-height: 100%;
+    }
+    .clothes__text{
+        font-size: 16px;
+    }
+    .nav{
+        padding: 15px 0;
+    }
+}
+@media(max-width:570px){
+    .top__info,
+    .clothes__box,
+    .footer__box{
+        display: flex;
+        gap: 15px;
+        overflow-x: scroll;
+    }
+    .top__card,
+    .clothes__info,
+    .footer__info{
+        flex-shrink: 0;
+    }
+    .footer__box::-webkit-scrollbar,
+    .clothes__box::-webkit-scrollbar{
+        height: 5px;
+    }
+    .top__info::-webkit-scrollbar-thumb,
+    .clothes__box::-webkit-scrollbar-thumb,
+    .footer__box::-webkit-scrollbar-thumb{
+        background-color: teal;
+        border-radius: 5px;
+    }
+    .logo img{
+        width: 130px;
+    }
+    .intro{
+        height: 350px;
+    }
+    .intro__title{
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+    .intro__text{
+        margin: 15px 0;
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .barca{
+        font-size: 22px;
+    }
+    .top__info{
+        width: 220px;
+        background-position: center;
+    }
+    .title{
+        font-size: 25px;
+        margin: 12px 0;
+    }
+    .text{
+        font-size: 13px;
+    }
+    .main__center{
+        height: 280px;
+    }
+    .clothes__box{margin-top: 0;}
+    .clothes__card{
+        width: 220px;
+        background-position: top;
+        height: 260px;
+    }
+    .clothes__desc{
+        width: max-content;
+    }
+    .clothes__item{
+        padding: 10px 15px;
+    }
+    .footer__card{
+        width: max-content;
+    }
+    .footer__title{
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .footer__text{
+        width: 210px;
+        text-align: center;
+    }
+    .footer__form input{
+        padding: 10px 8px;
+        line-height: 100%;
+        width: 150px;
+    }
+    .footer__form button{
+        padding: 10px 8px;
+    }
+    .footer__imgs{
+        gap: 15px;
+        justify-content: center;
+    }
+}
